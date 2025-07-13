@@ -1,0 +1,39 @@
+#INTRO
+server is a software which serves anything
+
+Framework 
+certain rules set are meant to be followed jo hai so hai 
+you cant just use as your wish
+
+Libraries can be used as per users wish
+Freedom h hence react is a library
+
+React makes single page application
+
+Use manipulation 
+Add on like React router
+
+
+#Create React Projects
+
+Use documentations to understand but the react one is not too beginner friendly 
+Vite and Parcel are bundlers which take various js files and gives a single file jisse saara kaam hojata hai
+
+React ke saath do libraries milte hai
+1.React-DOM : Website se kaam hai only
+2.React-native: Mobile apps ke liye yeh more imp and Dom is thoda bht imp
+(three.js ki bhi alag library aayegi)
+
+Difference between npx and npm ki npx mai directly execute karna chahte hai rather than adding and executing in the system
+
+create-react-app is a UTILITY 
+
+npx create-react-app 01basicreact to run the react file but this method is too time taking 
+
+To understand the react project head to the JSON file 
+1.Dependencies:React and react-dom are present 
+2.Testing libraries are also given
+3.React scripts
+4.Web vitals are for performance
+Some imp scripts
+start to run it in the
