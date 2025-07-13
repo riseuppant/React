@@ -1,0 +1,13 @@
+server is a software which serves anything
+
+Framework 
+certain rules set are meant to be followed jo hai so hai 
+you cant just use as your wish
+
+Libraries can be used as per users wish
+Freedom h hence react is a library
+
+React makes single page application
+
+Use manipulation 
+Add on like React router
