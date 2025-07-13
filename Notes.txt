@@ -36,4 +36,49 @@ To understand the react project head to the JSON file
 3.React scripts
 4.Web vitals are for performance
 Some imp scripts
-start to run it in the
+1.start to run it in the environment
+2.build is used when production mai jab jaata h cause browser simple html react hi samjhta hai to use kaise kare?
+3.test is for test cases
+4.eject is to remove the project from react and rest is done in some other library or framework
+
+lintConfig is ki jo error aata h wo underline or some lines which could be made better
+
+browser list contains which browsers iam gonna use and which not 
+
+#HOW TO RUN THE PROJECT
+start script se chalega project
+
+(using npm start has some exception)
+npm run start
+
+npm build(build folder hi share hota h rather than some other folder)
+
+But source code mai kuch nahi dikhta just one div with id root
+
+USE VITE
+
+isme project file mai NODE_MODULES Folder nahi hota hai
+Understand package.JSON
+devDependencies mai wo ho to koi dikkat nahi aur na ho to bhi 
+As node modules nahi ho npm i  (i for install)  idhar bhi jo Dependencies download krni hai wo aajeygi
+
+Dono packages mai script mai pehli wali ho rhi use run karne ke liye
+
+
+#LEARNING NEW THING
+README.md file ko update karte hai baar baar
+
+src folder mai har time(but build folder in production)
+
+Deleting some Files and Folders
+reportWebVitals
+logo.svg
+setupTests.js
+apptests.js
+app.css
+
+only three files app.js 
+index.js index.css(can remove this though)
+
+
+Removed Comments and unnecessary lines
