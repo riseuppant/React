@@ -1,0 +1,84 @@
+Here, in this module we will try to understand how React is inserted into HTML
+and Javascript ko kuch bhi kaam ke liye html mai inject 
+
+Package.json ki saari Dependencies node_modules folder mai present hoti hai
+
+Package-lock.json basically usme sab Dependencies ke stable versions lock hojaate hai
+
+Public Folder mai 
+mainfest for mobile versions ke liye meta tags dekhe jaate hai
+Single page index.html load hota hai
+
+index.html
+mai noscript tag which sends a message to enable the script for the browser
+
+then div id root and which is empty 
+nor there is no js injected 
+
+src mai main entry index.js (can be changed )
+ek root variable hota hai (with two libraries react-core foundational library and reactdom(it is implementation of react on web))
+
+React khudka bhi dom bnata h(VIRTUAL DOM) and then compares from the original dom and works thereby
+
+usme createRoot ek method hota hai 
+const root = root ka ref store karta h and then root.render hota hai 
+React ka strict mode lo and <App/> ko render kardo
+
+but App ka koi tag nahi hota hai 
+feature of JSX rendering elements idhar ek custom tag banate hai 
+
+What is we remove Strict Mode too
+(Development specific hota hai for optimization)
+
+App kya hai 
+App is a function which returns a HTML and then isko export kardiya and this html ko render karadiya
+
+
+But isme script tag ko add hi nahi kara hai to wo run kaise ho rahi 
+there is a scripts in json which automatically adds the script tag to it
+
+ReactDOM se hi wo element create ho rha 
+createRoot expects us to select and html element from index.html
+
+
+HOW DOES IT HAPPENS IN VITE
+
+There are no scripts in dependencies then how injection of js in html takes place??
+
+Idhar html wali file bahar hai
+(not in src)
+
+wo directly hi isme script tag se load kardega
+
+only Difference in the index and main .jsx is that react wala ek var banakar usme ref se ek method run kar rha render 
+while on the other hand main.jsx ko directly hi .render kar rhe 
+
+It's a lightweight version 
+
+what we try to do is create a new js file and export that as new element 
+
+But vite mai kuch errors ayenge as usme ek rules hai ki agar components banoge to use jsx mai karna hai
+
+
+It is advised to put the starting letter of tag in capital as it is the best practice
+
+return (
+    <Jimmy/>
+    // <h1>Chai aur react</h1>
+    // <h2>Chai aur react</h2>
+    // <p>test para</p>)
+    aisa nahi kar skte ho keval ek time par ONLY ONE COMPONENT hi export kar sakte ho 
+
+What you can either do is sabko ek div mai wrap karo jisse sab ek hi componenet ho jaye
+                    (OR)
+as writing div was getting problematic use empty closed <> and </> to wrap the whole thing
+
+But But there are some issues 
+agar tum react mai ise without caps likh rhe ho tag ko to file run to ho jayegi but jo function wala part h wo bhi append hojayega dom mai but it would remain empty
+
+components ko captials se start rkhe 
+jo functions ko export kar rahe ho wo use hi COMPONENTS kehte h 
+
+Good Practice- To name the files in captial too 
+You can rename it to JSX too as components are created better to name it to jsx unless you do some JS only
+

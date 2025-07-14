@@ -1,6 +1,12 @@
+import Jimmy from "./index2" 
 function App() {
   return (
-    <h1>Chai aur React with Vite | HB</h1>
+    <>
+    <Jimmy/>
+    <h1>Chai aur react</h1>
+    <h2>Chai aur react</h2>
+    <p>test para</p>
+    </>
   )
 }
 
