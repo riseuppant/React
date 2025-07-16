@@ -68,3 +68,40 @@ Jo bhi transpiler h wo MyApp ko bhi convert kar rha hoga
 as My App is also a function we can do it as MyApp() also 
 But this is not followed as optimization issues 
 
+abhi jo app wala function h wo end of the day convert reactElement mai hota h then why not use reactElement only directly kyonki wo convert hota h
+
+
+but usme to object hai but tum object ko parse nahi karte ho rather function pass karte hai 
+
+<React.StrictMode>
+    Hello world!
+  </React.StrictMode>
+This does render the text where the .StrictMode is inside the JSX block
+
+const ReactElement = {
+    type : 'a',
+    props: {
+        href : 'https://www.google.com',
+        target: '_blank'
+    },
+    children : 'Click me to visit google'
+}
+
+createRoot(document.getElementById('root')).render(
+  //Works in strict mode
+    ReactElement
+  
+  //Try using Capital 
+)
+The main reason this code doesnt work is that ye custom react nahi hai and isme jo render use ho rha wo default wala render h jiske parameters alag hai so it expects some syntax
+Isliye library hai but framework jitna strict nahi 
+
+
+//How do use JS then??
+Use curly brace syntax similar to backticks in JS or the template literals uske andar jo hai variable treat hoga 
+
+Abhi agar tum {username} ke saath kuch evaluation karo like 
+
+{if(name==true){
+    username
+}}Ye nahi hota hai as it is a EVALUATIVE EXPRESSION
