@@ -62,3 +62,9 @@ Doing the same with VITE (Gives much more clarity)
 
 Abhi jo App h ek function ko hi return kar rha then rather than importing we can just decalre it over there itself to run that which is much interesting that App is not a js syntax
 Babel or some other bundlers jo bts wo html ko js mai convert karta h using that tree
+
+IMPORTANT NOTE:
+Jo bhi transpiler h wo MyApp ko bhi convert kar rha hoga 
+as My App is also a function we can do it as MyApp() also 
+But this is not followed as optimization issues 
+
