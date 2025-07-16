@@ -5,3 +5,60 @@ Refer to customReact Folder
 React ek tag ko ek tree ki tarah dekhta h
 type : type of tag
 props : properties (it is an object)
+We are basically trying to make our own library to render the objects into the html using JS
+
+But jo tumne code likha h there is an issue of modularity 
+you cant create when there are many parameters 
+Rather use a loop based strategy
+
+ for(let prop in reactElement.props){
+        if(prop=='children') continue
+        domElement.setAttribute(prop,reactElement.props[prop])
+    }
+    container.appendChild(domElement)
+}
+const reactElement = {
+    type : 'a',
+    props: {
+        href : 'https://www.google.com',
+        target: '_blank'
+    },
+    children : 'Click me to visit google'
+}
+{
+ for(let prop in reactElement.props){
+        if(prop=='children') continue
+        domElement.setAttribute(prop,reactElement.props[prop])
+    }
+    container.appendChild(domElement)
+}
+const reactElement = {
+    type : 'a',
+    props: {
+        href : 'https://www.google.com',
+        target: '_blank'
+    },
+    children : 'Click me to visit google'
+}
+
+
+reactElement.props mai jab wo kabhi children pahunchega hi nahi then why that if statement 
+cause some JSX compilers make it as const reactElement = {
+    type: 'a',
+    props: {
+        href: 'https://google.com',
+        target: '_blank',
+        children: 'Click me'  // ← Ab children props ke andar hai!
+    }
+};
+which may cayse issue as children is not a attribute
+
+
+Actually ,react mai bhi aise hi jaati hai 
+This is what is custom react 
+usme mai bhi ek tree graph banta rhega and custom element generate hota rhega using a method
+
+Doing the same with VITE (Gives much more clarity)
+
+Abhi jo App h ek function ko hi return kar rha then rather than importing we can just decalre it over there itself to run that which is much interesting that App is not a js syntax
+Babel or some other bundlers jo bts wo html ko js mai convert karta h using that tree
