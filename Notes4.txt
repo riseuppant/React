@@ -1,0 +1,7 @@
+#Creating my own react library
+
+Refer to customReact Folder
+
+React ek tag ko ek tree ki tarah dekhta h
+type : type of tag
+props : properties (it is an object)
