@@ -27,3 +27,4 @@ WHYYY???
     
     No need of that variable now 
     as UseState se do chize nikalti hai ek number and ek function jo pure ui mai propogate hoga
+    useState se changes pure ui mai propogate karwa sakte hai

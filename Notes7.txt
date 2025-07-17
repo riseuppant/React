@@ -1,0 +1,12 @@
+                                                        Tailwind and Props in React
+    Tailwind is a utility 
+
+    dev dependecies production mai nahi jaati mp bundlers etc which are used in development
+    These small <> </> are called Fragments
+
+Image <img will give an error 
+Here the rule is that every tag added must be a closing tag 
+to pehle <img ... > make it as <img ... />
+
+What is the use of Props 
+Use of props ki use ek container  mai rakhkar use baar baar use karo

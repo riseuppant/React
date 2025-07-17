@@ -6,8 +6,7 @@ import './App.css'
 function App() {
   
   let [counter , setCounter]=useState(15)//can give anything to the useState from var to function
-
-  const [count, setCount] = useState(0)
+  //useState can used to propgate it thorughout the ui
   //let counter = 5;
   
   const addValue=()=>{
