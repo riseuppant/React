@@ -10,3 +10,10 @@ to pehle <img ... > make it as <img ... />
 
 What is the use of Props 
 Use of props ki use ek container  mai rakhkar use baar baar use karo
+In normal HTML CSS and JS we try to seggreagate on the basis of file
+
+But in react the ideology is like jo componenet bana rhe ho wo ek kaam kare not ki uske andar kya hai 
+
+ek card mai sab html css and js likhdo aur jab tumhe use reuse karna ho tab tum use reuse karo
+
+Matlab ek card ka content pura ek component banao jo ek card return kare
