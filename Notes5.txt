@@ -2,3 +2,28 @@
 HOOKS in React 
 
 WHYYY???
+ <button
+    onClick={addValue}
+    >Add Value</button>
+    <br />
+
+    this is similar where you just use name of the function which means that we pass only the reference of the function 
+    what happens is that the funciton is called on click whereas when you write () then the funciton is called without getting clicked
+
+    agar tum () lgaoge then what ever that funciton returns is passed to the handler 
+    nahi to uska reference lagao iska  matlab h use point karke rkho and jab marzi hogi tab run karwa dena 
+
+
+    Now there is an issue that
+    counter is not updating though counter is visible but not in the updating
+    UI UPDATING ERROR
+
+    Agar ise classical JS se karna ho to har jagah ka refernce lo use decalre karo then update karte jao and which makes task hefty and tidious
+
+    UI Updation ko React Control karta hai
+
+
+    There is no react import yet the parsing is done as babel does it under the hood 
+    
+    No need of that variable now 
+    as UseState se do chize nikalti hai ek number and ek function jo pure ui mai propogate hoga
