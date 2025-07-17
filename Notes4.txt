@@ -104,4 +104,9 @@ Abhi agar tum {username} ke saath kuch evaluation karo like
 
 {if(name==true){
     username
-}}Ye nahi hota hai as it is a EVALUATIVE EXPRESSION
+}}Ye nahi hota hai as it is a EVALUATED EXPRESSION
+
+The next topic is to inject username using react.createName
+you can directly do it by creating a const and adding it in the createreact syntax
+
+idhar bhi same problem aayegi if you try to use expression in that like if else 
