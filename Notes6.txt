@@ -1,0 +1,41 @@
+        VIRTUAL DOM, FIBRE AND RECONCILIATION
+
+Create ROOT method 
+BTS it creates a DOM like structure jaisa browser type ka structure hota hai 
+Main DOM aur mere wale DOM ko compare karta hai and updates only those things which are different in the UI. This is logic of VIRTUAL DOM
+But browser pura webstructure repaint karta h on Reload
+
+Virtal dom mai dom se nikaalkar use update karta hai 
+suppose ek element hai jo network se retrieve ho rha hai
+and uska text update ho rha hai 
+and aisa three times some seconds mai ho rha tha then rather than updating it every second we can avoid intermediate steps and just update the final step and render the text
+It's not necessary ki use instantly update kardu rather un calls ko ignore karke Ui ko finally update kar skte h using some algorithms
+
+
+React behind the scenes jo dom ko update karne ke liye algorithm use karta h wo FIBER ko use karta hai
+
+https://github.com/acdlite/react-fiber-architecture
+Hydration Concept: Pehle buttons and imgs aagye but no click available as no JS is present 
+once JS injects/ hydrated it starts working which is done nicely in this fiber
+
+Reconciliation: Two DOM Trees ko compare karta h 
+One is React wala and other is Browser wala Tree
+
+update: A change in the data used to render the React App/ Usually the result of SetState results in a re-render
+
+
+Reloading the whole app compromizes performance 
+
+Reconciliation is behind what is popularly understood as "virtual dom"
+
+Diffing of lists is performed using keys. Keys should be "stable, predictable, and unique."
+
+array ko loop karke suppose use buttons mai daalna h to wha bina keys ke kar skte h but keys se performance betterment hoga hai 
+
+Read Key points in documentation
+
+Push based approach - Iam the controller
+pull -> React controller hai
+
+Use?? 
+Jaise agar ek api call aya to update rokna padega and api call ki wajah se state change hogi but hum purane update ko delete hi kar skte h 
