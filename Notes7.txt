@@ -17,3 +17,31 @@ But in react the ideology is like jo componenet bana rhe ho wo ek kaam kare not 
 ek card mai sab html css and js likhdo aur jab tumhe use reuse karna ho tab tum use reuse karo
 
 Matlab ek card ka content pura ek component banao jo ek card return kare
+
+Props ek object hota hai jo empty hota hai use pass karo us component ke params mai
+
+
+Ab Card mai tum channel lega but with no array nor  object with keys being undeclared
+Due to rerenders multiple times it prints
+Props: {name: "Hardik"}
+Props: {name: "Hardik"}  <-- happens again due to StrictMode
+Props: {name: "Hardik"}  <-- maybe re-render from parent
+Props: {name: "Hardik"}  <-- final render 
+
+IMPORTANT POINT <Chai classname="Chai"
+isme jab tum attributes rkhoge then they are saved as a key value pairs so you have to save it as a variable rather than something object 
+here classname is a prop and is added to props object like object mai 
+RHS OF prop must be string or a JS expression in {}
+
+React default mai props hi bolta hai 
+original syntax props ka kuch aur hota hai 
+
+Cards ke andar username ko use nahi kar rha 
+as props is an object 
+You can access to username 
+
+either {username} karlo then username use karte raho 
+
+Properties Handle karo 
+Default value {btnText || "visitMe"} Readablity issues
+
