@@ -1,0 +1,34 @@
+Abhi agar increament counter mai tum agar addValue 4 baar hoga then what would happen??
+
+const addValue=()=>{
+    console.log("Value Added", counter)
+    if(counter<20)counter+=1
+    setCounter(counter) // idhar 16
+    setCounter(counter) 17
+    setCounter(counter) 18
+    setCounter(counter) 19
+    iske baad 20 hoga ya 19?? 
+  }
+  which means after one clik will the ans be 16/20 ? 
+  My ans 20 
+
+Use State batches mai bhejta hai 
+Batching Logic is handled by react itself
+Batching is a process by which React groups multiple state updates together and applies them in a single re-render 
+
+Batches multiple State updatets
+sabhi state counter hi hote hai 
+
+setCounter(counter);
+setCounter(counter);
+setCounter(counter);
+setCounter(counter);
+
+
+To fix that 
+setCounter(prev => prev + 1);
+setCounter(prev => prev + 1);
+setCounter(prev => prev + 1);
+setCounter(prev => prev + 1);
+
+Isme call back hota h jisse counter ki value aati hai current state mai and is passed to that function jab callback hoga to pura implementation rukega 
