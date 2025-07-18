@@ -1,0 +1,12 @@
+Memoization Hooks
+
+React gives hooks jisse optimization karskte h 
+Copy ka option wala hook
+
+Dependencies jjaise ki slider ko move karo to method change ho
+so we have to understand these Dependencies
+2.How do we optimize it?
+3.How do we target a particular input field 
+
+These all are done by Hooks
+
