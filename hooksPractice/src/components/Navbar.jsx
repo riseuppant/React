@@ -1,4 +1,5 @@
 import React from "react";
+import { memo } from "react";
 
 const Navbar = ({adjective})=>{
     console.log("NavBar is rendered")
@@ -9,4 +10,4 @@ const Navbar = ({adjective})=>{
     )
 }
 
-export default Navbar
+export default memo (Navbar)

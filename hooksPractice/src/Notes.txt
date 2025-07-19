@@ -1,0 +1,3 @@
+//Jitni baar state change hogi component re render hoga 
+Use memo 
+this works when props changes only 

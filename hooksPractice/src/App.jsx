@@ -6,14 +6,17 @@ import Navbar from './components/Navbar'
 function App() {
   const [count, setCount] = useState(0)
   const [adjective , setAdjective] = useState("good")
-
   const getAdjective = ()=>{
-    return "another"
-  }
+return "another"
+}
   return (
     <>
-      <Navbar adjective = {"good"} getAdjective={getAdjective}/>
+      <Navbar adjective = {"good"} />
+      <button onClick={() => setCount((count) => count + 1)}>
+        count is {count}
+      </button>
     </>
+
   )
 }
 
