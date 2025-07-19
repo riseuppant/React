@@ -8,8 +8,10 @@ function App() {
   const [Password,setPassword]=useState("")
 
   const passwordGenerator=()=>{
-    
+    console.log("Password Loaded")
   }
+
+  
   return (
 
     <>
