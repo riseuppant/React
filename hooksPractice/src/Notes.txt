@@ -1,3 +1,27 @@
 //Jitni baar state change hogi component re render hoga 
 Use memo 
 this works when props changes only 
+
+When you add another function in the prop which returns something then everytime you click and the function returns something each return is different from other and hence memo would not work here
+
+const getAdjective=()=>{
+    console.log("This is me")
+} 
+const getAdjective2=()=>{
+    console.log("This is me")
+} 
+
+getAdjective!= getAdjective2 though both are same so this means that every call is treated differently and hence rendered everytime meaning prop has been changed so it will print
+
+How do you avoid this??
+Kindof yaad rakho ki aisa baar baar call na karo
+
+useCallback se freeze hojayga so no worries of re-rendering
+
+What if we use count in the callback which means har baar alag value so har baar re-rendering karna padega
+
+Agar bina callback ke karenge to navbar rerender hoga as function change ho rha 
+
+Use callback use karoge to bhi wo freeze hojayega
+
+Isme dependency daaloge matlab jab tak wo dependency change nahi hogi use lock kardo and change mat karo
