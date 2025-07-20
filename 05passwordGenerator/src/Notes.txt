@@ -1,0 +1,14 @@
+You cant call passwordgenerator directly as too many rerenders to prevent infinite loop 
+Cause there is a callback what if there is no callback
+
+Important note that if you use callback you try to optimize the method whereas in useEffect you check if any updation is there then corresponding changes occur
+
+COPY Button 
+In this you have two entities which are not connected to each other input and copy button so you can connect them using the useRef hook 
+
+How to use this
+
+jiska ref lena h uske attribute mai ref={name} daaldo
+
+IMPORTANT
+When we do this on next.js there is no window object on server side
