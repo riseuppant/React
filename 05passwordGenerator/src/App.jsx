@@ -28,6 +28,10 @@ function App() {
   }, [length, numbers, char, setPassword])
 
   const copyPasswordtoClip = useCallback(()=>{
+    passwordRef.current?.select();
+    passwordRef.current?.setSelectionRange(0,3)
+
+
     window.navigator.clipboard.writeText(Password)
   },[Password])
   useEffect(()=>{
@@ -50,7 +54,7 @@ function App() {
           ref={passwordRef} />
           <button 
           onClick={copyPasswordtoClip}
-          className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>Copy</button>
+          className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 hover:bg-blue-500 cursor-grab'>Copy</button>
           </div>
           <div className='flex text-sm gap-x-2'>
             <div className='flex items-center gap-x-1'>
@@ -89,8 +93,6 @@ function App() {
               <label htmlFor='charInput'>Special Char</label>
           </div>
       </div>
-
-
 
     </>
   )
